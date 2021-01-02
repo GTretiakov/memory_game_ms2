@@ -1,0 +1,39 @@
+/*----Play Button----*/
+.play {
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    text-align: center; 
+}
+
+#playbtn {
+    height: 50px;
+    width: 100px;
+}
+
+
+/*----Numbers----*/
+.numbers {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+}
+
+.numbers > button {
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    border: 0;
+    font-size: 50px;
+}
+
+/*----Numbers----*/
+.score {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+

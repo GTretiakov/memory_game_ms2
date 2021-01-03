@@ -2,6 +2,8 @@ let myArray = [];
 
 let myArray2 = [];
 
+
+
 $("#playbtn").click(function(){
     let a = Math.floor(Math.random() * 9 + 1);
     if (a == 1) {
@@ -59,7 +61,7 @@ $("#playbtn").click(function(){
         }, 500);
         myArray.push(9);
     }
-    console.log(myArray)
+    // console.log(myArray[i])
 });
 
 
@@ -70,6 +72,7 @@ $("#one").click(function(){
     $("#one").removeClass("highlight");
     }, 500);
     myArray2.push(1);
+    // console.log(myArray2[i2++])
     if (arrayEquals(myArray, myArray2) == true) {
     playClick();
 }
@@ -135,7 +138,7 @@ $("#seven").click(function(){
 }
 });
 $("#eight").click(function(){
-    $("#eight").addClass("highlight");
+    $(this).addClass("highlight");
     setTimeout(function() {
     $("#eight").removeClass("highlight");
     }, 500);
@@ -145,7 +148,7 @@ $("#eight").click(function(){
 }
 });
 $("#nine").click(function(){
-    $("#nine").addClass("highlight");
+    $(this).addClass("highlight");
     setTimeout(function() {
     $("#nine").removeClass("highlight");
     }, 500);
@@ -167,15 +170,75 @@ function playClick(){
 }
 
 let i;
+let score = myArray[i];
 for (i = 0; i < myArray.length; i++) {
     
-}
+};
+let i2;
+let score2 = myArray2[i2];
+for (i2 = 0; i2 < myArray2.length; i2++) {
+    
+};
 
 
 
-
-
-
-
+function repeat(){
+    if (arrayEquals(myArray, myArray2) == true) {
+        
+    for (;myArray[i] == 1;){
+        $("#one").addClass("highlight");
+        setTimeout(function() {
+        $("#one").removeClass("highlight");
+        }, 500);
+    };
+    for (;myArray[i] == 2;){
+        $("#two").addClass("highlight");
+        setTimeout(function() {
+        $("#two").removeClass("highlight");
+        }, 500);
+    };
+    for (;myArray[i] == 3;){
+        $("#three").addClass("highlight");
+        setTimeout(function() {
+        $("#three").removeClass("highlight");
+        }, 500);
+    };
+    for (;myArray[i] == 4;){
+        $("#four").addClass("highlight");
+        setTimeout(function() {
+        $("#four").removeClass("highlight");
+        }, 500);
+    };
+    for (;myArray[i] == 5;){
+        $("#five").addClass("highlight");
+        setTimeout(function() {
+        $("#five").removeClass("highlight");
+        }, 500);
+    };
+    for (;myArray[i] == 6;){
+        $("#six").addClass("highlight");
+        setTimeout(function() {
+        $("#six").removeClass("highlight");
+        }, 500);
+    };
+    for (;myArray[i] == 7;){
+        $("#seven").addClass("highlight");
+        setTimeout(function() {
+        $("#seven").removeClass("highlight");
+        }, 500);
+    };
+    for (;myArray[i] == 8;){
+        $("#eight").addClass("highlight");
+        setTimeout(function() {
+        $("#eight").removeClass("highlight");
+        }, 500);
+    };
+    for (;myArray[i] == 9;){
+        $("#nine").addClass("highlight");
+        setTimeout(function() {
+        $("#nine").removeClass("highlight");
+        }, 500);
+    };
+}};
 
 

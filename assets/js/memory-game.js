@@ -28,21 +28,21 @@ function arrayEquals(myArray, myArray2) {
 function playClick(){
     
         
-        // repeat();
+        repeat();
         // setInterval(() => {
-        const iter = myArray[Symbol.iterator]();
-        let result;
-        while (!(result = iter.next()).done) {
-        //     myArray.forEach(element => repeat(element));
+        // const iter = myArray[Symbol.iterator]();
+        // let result;
+        // while (!(result = iter.next()).done) {
+        // //     myArray.forEach(element => repeat(element));
         
             
-            // myArray.forEach(repeat);
-            // repeat(result.value);
+        //     // myArray.forEach(repeat);
+        //     // repeat(result.value);
         
-        setInterval(function(){ repeat(result.value); }, 1000);
+        // setInterval(function(){ repeat(result.value); }, 1000);
         
 
-        };
+        // };
         
             setTimeout(function(){ 
                 $("#playbtn").click();
@@ -56,94 +56,98 @@ function playClick(){
                 // while (!(result = iter.next()).done) {
                 // console.log(result.value);
                 // };
-            }, 1000 * (i + myArray.length));
+            }, 1000 * (myArray.length));
         // }, 1000);
     
 };
 
 
 function repeat() {
+
+
     for (i = 0; i < myArray.length; i++) {
-    
+        setTimeout(function(i) {    // this timeout function was copied from https://stackoverflow.com/questions/7749090/how-to-use-setinterval-function-within-for-loop
+            console.log("%d => %d", i, myArray[i] += 0);
         // setTimeout(function(){
             if (arrayEquals(myArray, myArray2) == true) {
                 if (myArray[i] == 1){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#one").addClass("highlight");
                         setTimeout(function() {
                         $("#one").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 } else if (myArray[i] == 2) {
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#two").addClass("highlight");
                         setTimeout(function() {
                         $("#two").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 } else if (myArray[i] == 3){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#three").addClass("highlight");
                         setTimeout(function() {
                         $("#three").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 } else if (myArray[i] == 4){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#four").addClass("highlight");
                         setTimeout(function() {
                         $("#four").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 } else if (myArray[i] == 5){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#five").addClass("highlight");
                         setTimeout(function() {
                         $("#five").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 } else if (myArray[i] == 6){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#six").addClass("highlight");
                         setTimeout(function() {
                         $("#six").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 } else if (myArray[i] == 7){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#seven").addClass("highlight");
                         setTimeout(function() {
                         $("#seven").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 } else if (myArray[i] == 8){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#eight").addClass("highlight");
                         setTimeout(function() {
                         $("#eight").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 } else if (myArray[i] == 9){
-                    setTimeout(function(){
+                    // setTimeout(function(){
                         $("#nine").addClass("highlight");
                         setTimeout(function() {
                         $("#nine").removeClass("highlight");
                         }, 500);
-                    }, 1000);
+                    // }, 1000);
                     
                 };
             
             };
+        // setTimeout(function(){}, 1000)
         // }, 1000 * (i + 1));
-
+        }, i * 1000, i);
     };
 };
 
@@ -155,6 +159,7 @@ $("#playbtn").click(function(){
 	    $("#one").removeClass("highlight");
         }, 500);
         myArray.push(1);
+        // go
         // repArr.push(one());
         
     } else if (a == 2) {
@@ -222,6 +227,7 @@ $("#playbtn").click(function(){
         // repArr.push(nine());
         
     }
+    // go
     // console.log(myArray[i])
 });
 

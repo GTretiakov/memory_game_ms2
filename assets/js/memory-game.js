@@ -20,6 +20,7 @@ function playClick(){
         $("#playbtn").click();
         myArray2.length = 0;
         console.log(myArray);
+        
     }, 1000 * (myArray.length));  
 };
 
@@ -89,11 +90,11 @@ function check(myArray, myArray2){
 function score(){
     if (check(myArray, myArray2) == true){
        document.getElementById("scvalue").innerHTML = myArray2.length;
-       console.log("s") 
+       console.log("score") 
     }
 }
 
-function gameOver(myArray, myArray2){
+function gameOver(){
     setTimeout(function(){
     myArray.length = 0;
     myArray2.length = 0;
@@ -185,8 +186,9 @@ $("#one").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });
@@ -201,8 +203,9 @@ $("#two").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });
@@ -217,8 +220,9 @@ $("#three").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });
@@ -233,8 +237,9 @@ $("#four").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });
@@ -249,8 +254,9 @@ $("#five").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });
@@ -265,8 +271,9 @@ $("#six").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });
@@ -281,8 +288,9 @@ $("#seven").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });
@@ -297,8 +305,9 @@ $("#eight").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });
@@ -313,8 +322,9 @@ $("#nine").click(function(){
     } else
        if (check(myArray, myArray2) == false){
        alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log(myArray2)
        console.log("s") 
-       gameOver(myArray, myArray2)
+       gameOver()
 }
 score();
 });

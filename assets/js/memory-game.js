@@ -4,6 +4,7 @@ let repArr = [];
 let i;
 let myAleng = myArray.length;
 let lastI = myArray2[myArray2.length - 1];
+var lastScore = myArray2.length;
 function arrayEquals(myArray, myArray2) {  // function was copied from https://masteringjs.io/tutorials/fundamentals/compare-arrays
   return Array.isArray(myArray) &&
     Array.isArray(myArray2) &&
@@ -14,6 +15,7 @@ function arrayEquals(myArray, myArray2) {  // function was copied from https://m
 function playClick(){
     $(".action>p").html("WATCH!");
     repeat();
+    
     setTimeout(function(){ 
         $("#playbtn").click();
         myArray2.length = 0;
@@ -86,10 +88,19 @@ function check(myArray, myArray2){
 
 function score(){
     if (check(myArray, myArray2) == true){
-       document.getElementById("scvalue").innerHTML = myArray.length;
+       document.getElementById("scvalue").innerHTML = myArray2.length;
        console.log("s") 
     }
 }
+
+function gameOver(myArray, myArray2){
+    setTimeout(function(){
+    myArray.length = 0;
+    myArray2.length = 0;
+    console.log("OV")
+    }, 200)
+}
+
 
 $("#playbtn").click(function(){
     let a = Math.floor(Math.random() * 9 + 1);
@@ -169,14 +180,15 @@ $("#one").click(function(){
     $("#one").removeClass("highlight");
     }, 500);
     myArray2.push(1);
-    if (check(myArray, myArray2) == false){
-        document.getElementById("scvalue").innerHTML = myArray.length;
-        console.log("s") 
-    }
-    console.log(myArray2)
     if (arrayEquals(myArray, myArray2) == true) {
-    setTimeout(function(){playClick()}, 1000);  
+    setTimeout(function(){playClick()}, 1000);
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 $("#two").click(function(){
     $("#two").addClass("highlight");
@@ -184,14 +196,15 @@ $("#two").click(function(){
     $("#two").removeClass("highlight");
     }, 500);
     myArray2.push(2);
-    if (check(myArray, myArray2) == false){
-       document.getElementById("scvalue").innerHTML = myArray.length;
-       console.log("s") 
-    }
-    console.log(myArray2)
     if (arrayEquals(myArray, myArray2) == true) {
     setTimeout(function(){playClick()}, 1000);
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 $("#three").click(function(){
     $("#three").addClass("highlight");
@@ -199,14 +212,15 @@ $("#three").click(function(){
     $("#three").removeClass("highlight");
     }, 500);
     myArray2.push(3);
-    if (check(myArray, myArray2) == false){
-       document.getElementById("scvalue").innerHTML = myArray.length;
-       console.log("s") 
-    }
-    console.log(myArray2)
     if (arrayEquals(myArray, myArray2) == true) {
     setTimeout(function(){playClick()}, 1000);
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 $("#four").click(function(){
     $("#four").addClass("highlight");
@@ -214,15 +228,15 @@ $("#four").click(function(){
     $("#four").removeClass("highlight");
     }, 500);
     myArray2.push(4);
-    if (check(myArray, myArray2) == false){
-      document.getElementById("scvalue").innerHTML = myArray.length;
-       console.log("s") 
-    }
-    console.log(myArray2)
     if (arrayEquals(myArray, myArray2) == true) {
-   setTimeout(function(){playClick()}, 1000);
-    
+    setTimeout(function(){playClick()}, 1000);
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 $("#five").click(function(){
     $("#five").addClass("highlight");
@@ -230,15 +244,15 @@ $("#five").click(function(){
     $("#five").removeClass("highlight");
     }, 500);
     myArray2.push(5);
-    if (check(myArray, myArray2) == false){
-     document.getElementById("scvalue").innerHTML = myArray.length;
-       console.log("s") 
-    }
-    console.log(myArray2)
-    if (arrayEquals(myArray, myArray2) == true) {
+   if (arrayEquals(myArray, myArray2) == true) {
     setTimeout(function(){playClick()}, 1000);
-    
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 $("#six").click(function(){
     $("#six").addClass("highlight");
@@ -246,15 +260,15 @@ $("#six").click(function(){
     $("#six").removeClass("highlight");
     }, 500);
     myArray2.push(6);
-    if (check(myArray, myArray2) == false){
-       document.getElementById("scvalue").innerHTML = myArray.length;
-       console.log("s") 
-    }
-    console.log(myArray2)
     if (arrayEquals(myArray, myArray2) == true) {
     setTimeout(function(){playClick()}, 1000);
-    
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 $("#seven").click(function(){
     $("#seven").addClass("highlight");
@@ -262,15 +276,15 @@ $("#seven").click(function(){
     $("#seven").removeClass("highlight");
     }, 500);
     myArray2.push(7);
-    if (check(myArray, myArray2) == false){
-       document.getElementById("scvalue").innerHTML = myArray.length;
-       console.log("s") 
-    }
-    console.log(myArray2)
     if (arrayEquals(myArray, myArray2) == true) {
     setTimeout(function(){playClick()}, 1000);
-    
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 $("#eight").click(function(){
     $(this).addClass("highlight");
@@ -278,15 +292,15 @@ $("#eight").click(function(){
     $("#eight").removeClass("highlight");
     }, 500);
     myArray2.push(8);
-    if (check(myArray, myArray2) == false){
-        document.getElementById("scvalue").innerHTML = myArray.length;
-       console.log("s") 
-    }
-    console.log(myArray2)
     if (arrayEquals(myArray, myArray2) == true) {
     setTimeout(function(){playClick()}, 1000);
-    
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 $("#nine").click(function(){
     $(this).addClass("highlight");
@@ -294,14 +308,15 @@ $("#nine").click(function(){
     $("#nine").removeClass("highlight");
     }, 500);
     myArray2.push(9);
-    if (check(myArray, myArray2) == true){
-       document.getElementById("scvalue").innerHTML = myArray.length;
-       console.log("s") 
-    }
-    console.log(myArray2)
     if (arrayEquals(myArray, myArray2) == true) {
     setTimeout(function(){playClick()}, 1000);
+    } else
+       if (check(myArray, myArray2) == false){
+       alert(`Game Over. Your score is ${myArray2.length - 1}. Play again?`)
+       console.log("s") 
+       gameOver(myArray, myArray2)
 }
+score();
 });
 
 

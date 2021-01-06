@@ -102,6 +102,7 @@ function gameOver(){
     console.log("OV")
     $(".action>p").html("Press Play to start");
     disableBtn()
+    enablePlay()
     }, 200)
 }
 
@@ -141,7 +142,15 @@ function enableBtn() {
     document.getElementById("nine").disabled = false;
 }
 
+function disablePlay() {
+    document.getElementById("playbtn").disabled = true;
+}
+function enablePlay() {
+    document.getElementById("playbtn").disabled = false;
+}
+
 $("#playbtn").click(function(){
+    disablePlay()
     let a = Math.floor(Math.random() * 9 + 1);
     if (a == 1) {
         $("#one").addClass("highlight");

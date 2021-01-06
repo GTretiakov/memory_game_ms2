@@ -2,8 +2,10 @@ let myArray = [];
 let myArray2 = [];
 let repArr = [];
 let i;
-const AnimSpeed = 400;
-const GameSpeed = 800;
+let AnimSpeed = 400;
+let GameSpeed = 800;
+let myArrL = myArray.length
+const lastI = myArray[myArray.length - 1];
 function arrayEquals(myArray, myArray2) {  // function was copied from https://masteringjs.io/tutorials/fundamentals/compare-arrays
   return Array.isArray(myArray) &&
     Array.isArray(myArray2) &&
@@ -15,6 +17,7 @@ function playClick(){
     disableBtn()
     $(".action>p").html("WATCH!");
     repeat();
+    score();
     
     setTimeout(function(){ 
         $("#playbtn").click();
@@ -89,7 +92,7 @@ function check(myArray, myArray2){
 
 function score(){
     if (check(myArray, myArray2) == true){
-       document.getElementById("scvalue").innerHTML = myArray2.length;
+       document.getElementById("scvalue").innerHTML = myArray.length;
        console.log("score") 
     }
 }
@@ -152,6 +155,9 @@ function enablePlay() {
 $("#playbtn").click(function(){
     disablePlay()
     let a = Math.floor(Math.random() * 9 + 1);
+    if (a == myArray[myArray.length - 1]) {
+        $("#playbtn").click();
+    } else
     if (a == 1) {
         $("#one").addClass("highlight");
         setTimeout(function() {
@@ -236,7 +242,7 @@ $("#one").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 $("#two").click(function(){
     $("#two").addClass("highlight");
@@ -251,7 +257,7 @@ $("#two").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 $("#three").click(function(){
     $("#three").addClass("highlight");
@@ -266,7 +272,7 @@ $("#three").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 $("#four").click(function(){
     $("#four").addClass("highlight");
@@ -281,7 +287,7 @@ $("#four").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 $("#five").click(function(){
     $("#five").addClass("highlight");
@@ -296,7 +302,7 @@ $("#five").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 $("#six").click(function(){
     $("#six").addClass("highlight");
@@ -311,7 +317,7 @@ $("#six").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 $("#seven").click(function(){
     $("#seven").addClass("highlight");
@@ -326,7 +332,7 @@ $("#seven").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 $("#eight").click(function(){
     $(this).addClass("highlight");
@@ -341,7 +347,7 @@ $("#eight").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 $("#nine").click(function(){
     $(this).addClass("highlight");
@@ -356,7 +362,7 @@ $("#nine").click(function(){
        alert(`Game Over. Your score is ${myArray.length - 1}. Play again?`)
        gameOver()
 }
-score();
+
 });
 
 

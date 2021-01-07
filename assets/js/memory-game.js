@@ -2,8 +2,8 @@ let myArray = [];
 let myArray2 = [];
 let repArr = [];
 let i;
-let AnimSpeed = 300;
-let GameSpeed = 500;
+let AnimSpeed = 500;
+let GameSpeed = 800;
 let myArrL = myArray.length
 const lastI = myArray[myArray.length - 1];
 function arrayEquals(myArray, myArray2) {  // function was copied from https://masteringjs.io/tutorials/fundamentals/compare-arrays

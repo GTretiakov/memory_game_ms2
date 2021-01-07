@@ -168,11 +168,12 @@ $("#playbtn").click(function(){
     disablePlay()
     resetScore()
     $(".action>p").html("WATCH!");
-    setTimeout(function(){
+    
     let a = Math.floor(Math.random() * 9 + 1);
     if (a == myArray[myArray.length - 1]) {
         $("#playbtn").click();
     } else
+    setTimeout(function(){
     if (a == 1) {
         $("#one").removeClass("normal").addClass("highlight");
         setTimeout(function() {
@@ -229,7 +230,9 @@ $("#playbtn").click(function(){
         myArray.push(9);
     }
     console.log(myArray);
+    setTimeout(function(){
     $(".action>p").html("PLAY!");
+    }, GameSpeed)
     enableBtn()
     }, GameSpeed)
     

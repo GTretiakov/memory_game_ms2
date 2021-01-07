@@ -33,49 +33,58 @@ function repeat() {
             // console.log("%d => %d", i, myArray[i] += 0);
             if (arrayEquals(myArray, myArray2) == true) {
                 if (myArray[i] == 1){
-                        $("#one").addClass("highlight");
+                        $("#one").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#one").removeClass("highlight");
+                            console.log("rep")
+                        $("#one").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);  
                 } else if (myArray[i] == 2) {
-                        $("#two").addClass("highlight");
+                        $("#two").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#two").removeClass("highlight");
+                            console.log("rep")
+                        $("#two").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);
                 } else if (myArray[i] == 3){
-                        $("#three").addClass("highlight");
+                        $("#three").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#three").removeClass("highlight");
+                            console.log("rep")
+                        $("#three").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);
                 } else if (myArray[i] == 4){
-                        $("#four").addClass("highlight");
+                        $("#four").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#four").removeClass("highlight");
+                            console.log("rep")
+                        $("#four").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);
                 } else if (myArray[i] == 5){
-                        $("#five").addClass("highlight");
+                        $("#five").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#five").removeClass("highlight");
+                            console.log("rep")
+                        $("#five").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);
                 } else if (myArray[i] == 6){
-                        $("#six").addClass("highlight");
+                        $("#six").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#six").removeClass("highlight");
+                            console.log("rep")
+                        $("#six").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);
                 } else if (myArray[i] == 7){
-                        $("#seven").addClass("highlight");
+                        $("#seven").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#seven").removeClass("highlight");
+                            console.log("rep")
+                        $("#seven").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);
                 } else if (myArray[i] == 8){
-                        $("#eight").addClass("highlight");
+                        $("#eight").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#eight").removeClass("highlight");
+                            console.log("rep")
+                        $("#eight").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);
                 } else if (myArray[i] == 9){
-                        $("#nine").addClass("highlight");
+                        $("#nine").removeClass("normal").addClass("highlight");
                         setTimeout(function() {
-                        $("#nine").removeClass("highlight");
+                            console.log("rep")
+                        $("#nine").removeClass("highlight").addClass("normal");
                         }, AnimSpeed);  
                 };
             };
@@ -165,57 +174,57 @@ $("#playbtn").click(function(){
         $("#playbtn").click();
     } else
     if (a == 1) {
-        $("#one").addClass("highlight");
+        $("#one").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#one").removeClass("highlight");
+	    $("#one").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(1);
     } else if (a == 2) {
-        $("#two").addClass("highlight");
+        $("#two").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#two").removeClass("highlight");
+	    $("#two").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(2);
     } else if (a == 3) {
-        $("#three").addClass("highlight");
+        $("#three").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#three").removeClass("highlight");
+	    $("#three").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(3);
     } else if (a == 4) {
-        $("#four").addClass("highlight");
+        $("#four").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#four").removeClass("highlight");
+	    $("#four").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(4);
     } else if (a == 5) {
-        $("#five").addClass("highlight");
+        $("#five").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#five").removeClass("highlight");
+	    $("#five").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(5);
     } else if (a == 6) {
-        $("#six").addClass("highlight");
+        $("#six").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#six").removeClass("highlight");
+	    $("#six").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(6);
     } else if (a == 7) {
-        $("#seven").addClass("highlight");
+        $("#seven").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#seven").removeClass("highlight");
+	    $("#seven").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(7);
     } else if (a == 8) {
-        $("#eight").addClass("highlight");
+        $("#eight").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#eight").removeClass("highlight");
+	    $("#eight").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(8);
     } else if (a == 9) {
-        $("#nine").addClass("highlight");
+        $("#nine").removeClass("normal").addClass("highlight");
         setTimeout(function() {
-	    $("#nine").removeClass("highlight");
+	    $("#nine").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(9);
     }
@@ -230,9 +239,9 @@ $("#playbtn").click(function(){
 
 
 $("#one").click(function(){
-    $("#one").addClass("highlight");
+    $("#one").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#one").removeClass("highlight");
+    $("#one").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(1);
     if (arrayEquals(myArray, myArray2) == true) {
@@ -245,9 +254,9 @@ $("#one").click(function(){
 
 });
 $("#two").click(function(){
-    $("#two").addClass("highlight");
+    $("#two").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#two").removeClass("highlight");
+    $("#two").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(2);
     if (arrayEquals(myArray, myArray2) == true) {
@@ -260,9 +269,9 @@ $("#two").click(function(){
 
 });
 $("#three").click(function(){
-    $("#three").addClass("highlight");
+    $("#three").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#three").removeClass("highlight");
+    $("#three").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(3);
     if (arrayEquals(myArray, myArray2) == true) {
@@ -275,9 +284,9 @@ $("#three").click(function(){
 
 });
 $("#four").click(function(){
-    $("#four").addClass("highlight");
+    $("#four").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#four").removeClass("highlight");
+    $("#four").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(4);
     if (arrayEquals(myArray, myArray2) == true) {
@@ -290,9 +299,9 @@ $("#four").click(function(){
 
 });
 $("#five").click(function(){
-    $("#five").addClass("highlight");
+    $("#five").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#five").removeClass("highlight");
+    $("#five").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(5);
    if (arrayEquals(myArray, myArray2) == true) {
@@ -305,9 +314,9 @@ $("#five").click(function(){
 
 });
 $("#six").click(function(){
-    $("#six").addClass("highlight");
+    $("#six").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#six").removeClass("highlight");
+    $("#six").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(6);
     if (arrayEquals(myArray, myArray2) == true) {
@@ -320,9 +329,9 @@ $("#six").click(function(){
 
 });
 $("#seven").click(function(){
-    $("#seven").addClass("highlight");
+    $("#seven").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#seven").removeClass("highlight");
+    $("#seven").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(7);
     if (arrayEquals(myArray, myArray2) == true) {
@@ -335,9 +344,9 @@ $("#seven").click(function(){
 
 });
 $("#eight").click(function(){
-    $(this).addClass("highlight");
+    $("#eight").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#eight").removeClass("highlight");
+    $("#eight").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(8);
     if (arrayEquals(myArray, myArray2) == true) {
@@ -350,9 +359,9 @@ $("#eight").click(function(){
 
 });
 $("#nine").click(function(){
-    $(this).addClass("highlight");
+    $("#nine").removeClass("normal").addClass("highlight");
     setTimeout(function() {
-    $("#nine").removeClass("highlight");
+    $("#nine").removeClass("highlight").addClass("normal");
     }, AnimSpeed);
     myArray2.push(9);
     if (arrayEquals(myArray, myArray2) == true) {

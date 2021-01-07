@@ -14,17 +14,16 @@ function arrayEquals(myArray, myArray2) {  // function was copied from https://m
 }; 
 
 function playClick(){
+    score();
     disableBtn()
     $(".action>p").html("WATCH!");
-    repeat();
-    score();
-    
-    setTimeout(function(){ 
-        $("#playbtn").click();
-        myArray2.length = 0;
-        console.log(myArray);
-        
-    }, GameSpeed * (myArray.length));  
+    setTimeout(function(){
+        repeat();
+        setTimeout(function(){ 
+            $("#playbtn").click();
+            myArray2.length = 0;            
+        }, GameSpeed * (myArray.length - 1));  
+    }, GameSpeed);
 };
 
 
@@ -97,6 +96,10 @@ function score(){
     }
 }
 
+function resetScore(){
+    document.getElementById("scvalue").innerHTML = myArray.length;
+}
+
 function gameOver(){
     
     setTimeout(function(){
@@ -154,6 +157,9 @@ function enablePlay() {
 
 $("#playbtn").click(function(){
     disablePlay()
+    resetScore()
+    $(".action>p").html("WATCH!");
+    setTimeout(function(){
     let a = Math.floor(Math.random() * 9 + 1);
     if (a == myArray[myArray.length - 1]) {
         $("#playbtn").click();
@@ -164,66 +170,60 @@ $("#playbtn").click(function(){
 	    $("#one").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(1);
-        $(".action>p").html("WATCH!");
     } else if (a == 2) {
         $("#two").addClass("highlight");
         setTimeout(function() {
 	    $("#two").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(2);
-        $(".action>p").html("WATCH!");
     } else if (a == 3) {
         $("#three").addClass("highlight");
         setTimeout(function() {
 	    $("#three").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(3);
-        $(".action>p").html("WATCH!");
     } else if (a == 4) {
         $("#four").addClass("highlight");
         setTimeout(function() {
 	    $("#four").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(4);
-        $(".action>p").html("WATCH!");
     } else if (a == 5) {
         $("#five").addClass("highlight");
         setTimeout(function() {
 	    $("#five").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(5);
-        $(".action>p").html("WATCH!");
     } else if (a == 6) {
         $("#six").addClass("highlight");
         setTimeout(function() {
 	    $("#six").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(6);
-        $(".action>p").html("WATCH!");
     } else if (a == 7) {
         $("#seven").addClass("highlight");
         setTimeout(function() {
 	    $("#seven").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(7);
-        $(".action>p").html("WATCH!");
     } else if (a == 8) {
         $("#eight").addClass("highlight");
         setTimeout(function() {
 	    $("#eight").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(8);
-        $(".action>p").html("WATCH!");
     } else if (a == 9) {
         $("#nine").addClass("highlight");
         setTimeout(function() {
 	    $("#nine").removeClass("highlight");
         }, AnimSpeed);
         myArray.push(9);
-        $(".action>p").html("WATCH!");
     }
+    console.log(myArray);
     $(".action>p").html("PLAY!");
     enableBtn()
+    }, GameSpeed)
+    
 });
 
 

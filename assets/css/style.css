@@ -34,9 +34,13 @@
     margin: 0;
     border: 0;
     font-size: 50px;
+    background-color: #3eb9bb;
+}
+.numbers > button:disabled {
+    background-color: #3eb9bb;
 }
 
-/*----Numbers----*/
+/*----Score----*/
 .score {
     width: 300px;
     margin-left: auto;
@@ -45,7 +49,7 @@
 
 /*----Colors----*/
 .highlight {
-    background-color: blueviolet;
+    background-color: #501b4a;
 }
 
 

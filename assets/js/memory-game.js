@@ -4,6 +4,7 @@ let repArr = [];
 let i;
 let AnimSpeed = 500;
 let GameSpeed = 800;
+let clickSound = new Audio("assets/sounds/click.mp3")
 // let myArrL = myArray.length
 // const lastI = myArray[myArray.length - 1];
 function arrayEquals(myArray, myArray2) {  // function was copied from https://masteringjs.io/tutorials/fundamentals/compare-arrays
@@ -12,6 +13,10 @@ function arrayEquals(myArray, myArray2) {  // function was copied from https://m
     myArray.length === myArray2.length &&
     myArray.every((val, index) => val === myArray2[index]);
 }; 
+function soundClick() {
+    clickSound.play();
+    console.log("sound")
+}
 
 function playClick(){
     score();
@@ -168,6 +173,7 @@ function enablePlay() {
 // }
 
 $("#slow").click(function() {
+    soundClick()
     $(this).removeClass("speedBtnOff").addClass("speedBtnOn")
     $("#medium").removeClass("speedBtnOn").addClass("speedBtnOff")
     $("#fast").removeClass("speedBtnOn").addClass("speedBtnOff")
@@ -176,6 +182,7 @@ $("#slow").click(function() {
         console.log("slow")
 })
 $("#medium").click(function() {
+    soundClick()
     $(this).addClass("speedBtnOn").removeClass("speedBtnOff")
     $("#fast").removeClass("speedBtnOn").addClass("speedBtnOff")
     $("#slow").removeClass("speedBtnOn").addClass("speedBtnOff")
@@ -184,6 +191,7 @@ $("#medium").click(function() {
         console.log('med') 
 })
 $("#fast").click(function() {
+    soundClick()
     $(this).removeClass("speedBtnOff").addClass("speedBtnOn")
     $("#medium").removeClass("speedBtnOn").addClass("speedBtnOff")
     $("#slow").removeClass("speedBtnOn").addClass("speedBtnOff")
@@ -194,6 +202,7 @@ $("#fast").click(function() {
 
 
 $("#playbtn").click(function(){
+    
     disablePlay()
     resetScore()
     $(".action>p").html("WATCH!");
@@ -204,30 +213,35 @@ $("#playbtn").click(function(){
     } else
     setTimeout(function(){
     if (a == 1) {
+        soundClick()
         $("#one").removeClass("normal").addClass("highlight");
         setTimeout(function() {
 	    $("#one").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(1);
     } else if (a == 2) {
+        soundClick()
         $("#two").removeClass("normal").addClass("highlight");
         setTimeout(function() {
 	    $("#two").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(2);
     } else if (a == 3) {
+        soundClick()
         $("#three").removeClass("normal").addClass("highlight");
         setTimeout(function() {
 	    $("#three").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(3);
     } else if (a == 4) {
+        soundClick()
         $("#four").removeClass("normal").addClass("highlight");
         setTimeout(function() {
 	    $("#four").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(4);
     } else if (a == 5) {
+        soundClick()
         $("#five").removeClass("normal").addClass("highlight");
         setTimeout(function() {
 	    $("#five").removeClass("highlight").addClass("normal");
@@ -240,18 +254,21 @@ $("#playbtn").click(function(){
         }, AnimSpeed);
         myArray.push(6);
     } else if (a == 7) {
+        soundClick()
         $("#seven").removeClass("normal").addClass("highlight");
         setTimeout(function() {
 	    $("#seven").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(7);
     } else if (a == 8) {
+        soundClick()
         $("#eight").removeClass("normal").addClass("highlight");
         setTimeout(function() {
 	    $("#eight").removeClass("highlight").addClass("normal");
         }, AnimSpeed);
         myArray.push(8);
     } else if (a == 9) {
+        soundClick()
         $("#nine").removeClass("normal").addClass("highlight");
         setTimeout(function() {
 	    $("#nine").removeClass("highlight").addClass("normal");
@@ -271,6 +288,7 @@ $("#playbtn").click(function(){
 
 
 $("#one").click(function(){
+    soundClick()
     $("#one").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#one").removeClass("highlight").addClass("normal");
@@ -286,6 +304,7 @@ $("#one").click(function(){
 
 });
 $("#two").click(function(){
+    soundClick()
     $("#two").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#two").removeClass("highlight").addClass("normal");
@@ -301,6 +320,7 @@ $("#two").click(function(){
 
 });
 $("#three").click(function(){
+    soundClick()
     $("#three").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#three").removeClass("highlight").addClass("normal");
@@ -316,6 +336,7 @@ $("#three").click(function(){
 
 });
 $("#four").click(function(){
+    soundClick()
     $("#four").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#four").removeClass("highlight").addClass("normal");
@@ -331,6 +352,7 @@ $("#four").click(function(){
 
 });
 $("#five").click(function(){
+    soundClick()
     $("#five").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#five").removeClass("highlight").addClass("normal");
@@ -346,6 +368,7 @@ $("#five").click(function(){
 
 });
 $("#six").click(function(){
+    soundClick()
     $("#six").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#six").removeClass("highlight").addClass("normal");
@@ -361,6 +384,7 @@ $("#six").click(function(){
 
 });
 $("#seven").click(function(){
+    soundClick()
     $("#seven").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#seven").removeClass("highlight").addClass("normal");
@@ -376,6 +400,7 @@ $("#seven").click(function(){
 
 });
 $("#eight").click(function(){
+    soundClick()
     $("#eight").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#eight").removeClass("highlight").addClass("normal");
@@ -391,6 +416,7 @@ $("#eight").click(function(){
 
 });
 $("#nine").click(function(){
+    soundClick()
     $("#nine").removeClass("normal").addClass("highlight");
     setTimeout(function() {
     $("#nine").removeClass("highlight").addClass("normal");

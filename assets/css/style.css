@@ -90,11 +90,17 @@
     margin: 0;
     border: 0;
     font-size: 30px;
-    color: #fff;
     font-family: 'Yeon Sung', sans-serif;
     border-radius: 5px;
      background-color: #3eb9bb;
      padding: 0;
+}
+
+.speedBtnOn {
+    color: #e84610;
+}
+.speedBtnOff {
+    color: #fff;
 }
 
 

@@ -4,8 +4,8 @@ let repArr = [];
 let i;
 let AnimSpeed = 500;
 let GameSpeed = 800;
-let myArrL = myArray.length
-const lastI = myArray[myArray.length - 1];
+// let myArrL = myArray.length
+// const lastI = myArray[myArray.length - 1];
 function arrayEquals(myArray, myArray2) {  // function was copied from https://masteringjs.io/tutorials/fundamentals/compare-arrays
   return Array.isArray(myArray) &&
     Array.isArray(myArray2) &&
@@ -132,7 +132,6 @@ function gameOver(){
     document.getElementById("nine").disabled = true;
 
 function disableBtn() {
-    console.log("disable")
     document.getElementById("one").disabled = true;
     document.getElementById("two").disabled = true;
     document.getElementById("three").disabled = true;
@@ -145,7 +144,6 @@ function disableBtn() {
 }
 
 function enableBtn() {
-    console.log("enable")
     document.getElementById("one").disabled = false;
     document.getElementById("two").disabled = false;
     document.getElementById("three").disabled = false;
@@ -164,17 +162,31 @@ function enablePlay() {
     document.getElementById("playbtn").disabled = false;
 }
 
+// function speedBtn() {
+//     $(this).addClass("speedBtn");
+//     console.log('works')
+// }
+
 $("#slow").click(function() {
+    $(this).removeClass("speedBtnOff").addClass("speedBtnOn")
+    $("#medium").removeClass("speedBtnOn").addClass("speedBtnOff")
+    $("#fast").removeClass("speedBtnOn").addClass("speedBtnOff")
     AnimSpeed = 600;
     GameSpeed = 1100;
         console.log("slow")
 })
 $("#medium").click(function() {
+    $(this).addClass("speedBtnOn").removeClass("speedBtnOff")
+    $("#fast").removeClass("speedBtnOn").addClass("speedBtnOff")
+    $("#slow").removeClass("speedBtnOn").addClass("speedBtnOff")
     AnimSpeed = 500;
     GameSpeed = 800;
         console.log('med') 
 })
 $("#fast").click(function() {
+    $(this).removeClass("speedBtnOff").addClass("speedBtnOn")
+    $("#medium").removeClass("speedBtnOn").addClass("speedBtnOff")
+    $("#slow").removeClass("speedBtnOn").addClass("speedBtnOff")
     AnimSpeed = 300;
     GameSpeed = 500;
         console.log('fast')

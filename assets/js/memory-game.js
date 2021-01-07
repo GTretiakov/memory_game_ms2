@@ -2,8 +2,8 @@ let myArray = [];
 let myArray2 = [];
 let repArr = [];
 let i;
-let AnimSpeed = 400;
-let GameSpeed = 800;
+let AnimSpeed = 300;
+let GameSpeed = 500;
 let myArrL = myArray.length
 const lastI = myArray[myArray.length - 1];
 function arrayEquals(myArray, myArray2) {  // function was copied from https://masteringjs.io/tutorials/fundamentals/compare-arrays
@@ -163,6 +163,23 @@ function disablePlay() {
 function enablePlay() {
     document.getElementById("playbtn").disabled = false;
 }
+
+$("#slow").click(function() {
+    AnimSpeed = 600;
+    GameSpeed = 1100;
+        console.log("slow")
+})
+$("#medium").click(function() {
+    AnimSpeed = 500;
+    GameSpeed = 800;
+        console.log('med') 
+})
+$("#fast").click(function() {
+    AnimSpeed = 300;
+    GameSpeed = 500;
+        console.log('fast')
+})
+
 
 $("#playbtn").click(function(){
     disablePlay()

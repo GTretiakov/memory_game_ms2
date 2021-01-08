@@ -12,6 +12,12 @@ The design of this game is very simple and user intuitive, which makes it easy t
 <br/>The result of my work is very close to the original wireframe:<br/>
 ![Memory Game](assets/images/memoryGame.jpg)
 
+### User Stories
+As a player I want:
+- The game to be playeble using my mouse and/or touchscreen.
+- A large easy to press buttons.
+- Rules of the game to be easy to understand.
+
 
 ## Features
 -	The game has a fixed width of 300px that makes it responsive and suitable for playing on any device.

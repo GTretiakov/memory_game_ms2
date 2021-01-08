@@ -7,7 +7,7 @@ It was created to help you improve your memory while having fun.
 An inspiration for this project comes from a game I found on memozor.com, a free memory games website, where you can find a big variety of memory games with different styles.
 <br/>Link to the game: https://www.memozor.com/other-memory-games/numbers-memory-games/light-up-numbers
 I waned my game to be custom, so I decreased the quantity of numbers from 30 to 9 and added a Start button that starts the game.
-The design of this game is very simple and user intuitive, which makes it easy to start playing right away.
+The design of this game is very simple and user intuitive, which makes it easy to start playing right away.<br/>
 ![wireframe](assets/images/wireframe.jpg)
 <br/>The result of my work is very close to the original wireframe:<br/>
 ![Memory Game](assets/images/memoryGame.jpg)

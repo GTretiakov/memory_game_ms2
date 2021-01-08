@@ -12,7 +12,6 @@ function arrayEquals(myArray, myArray2) {  // function was copied from https://m
 }; 
 function soundClick() {
     $(".clicks").trigger('play');
-    console.log("sound")
 }
 function playClick(){
     score();

@@ -42,7 +42,11 @@ As a player I want:
 -	Draw.io
 
 ## Testing
-Most of the testing was made manually using Google Chrome Inspect tool. To make sure the site is responsive and working properly. I’ve done all possible actions on all types of available devices. All elements are working as they are expected.<br/>
+Most of the testing was made manually during development process using Google Chrome Inspect tool.
+One of the biggest issues I had while developing this game was implementing timeout inside for-loop inside my 'repeat' function. The length of myArray was increasing and I didn't know how to icrease a timeout accordingly. After hours of research and experiments with setTimeout and setInterval functions I've found a solution on [Stack Overflow](https://stackoverflow.com/questions/7749090/how-to-use-setinterval-function-within-for-loop)
+<br/>After playing the game over 100 times I've started noticing that even though JavaScript gave me a random number every time I played, it also was repeating the same number two or three times in a row very often and made my playing process less enjoyeble. I guess it was because 9 is not a big number to choose from (to be honest, I don't know much about Probability theory). After this discovery I made a decision to adjust my click function for 'playbtn' so it never repeats the same number two times in a row.
+</br/>To make sure the site is responsive and working properly. I’ve done all possible actions on all types of available devices. All elements are working as they are expected.<br/>
+
 Special thanks to http://ami.responsivedesign.is/ where I checked responsiveness on different types of devices.
 ![responsive](assets/images/responsive.jpg)
 

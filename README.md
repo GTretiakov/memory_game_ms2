@@ -46,6 +46,6 @@ JavaScript code was checked with [Syntax Validator](https://esprima.org/demo/val
 
 ## Credits
 The idea for the game was taken from https://www.memozor.com/ - a website with huge selection of free memory games.
-The sound for clicking buttons was downloaded from https://www.myinstants.com/
-Special thanks to my teacher Usmaan Mujtaba (Canadian Business College) who consulted me during the process of creation this project.
+<br/>The sound for clicking buttons was downloaded from https://www.myinstants.com/
+<br/>Special thanks to my teacher Usmaan Mujtaba (Canadian Business College) who consulted me during the process of creation this project.
 

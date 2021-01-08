@@ -42,7 +42,7 @@ As a player I want:
 -	Draw.io
 
 ## Testing
-Most of the testing was made manually during development process using Google Chrome Inspect tool.
+Most of the testing was done manually during development process using Google Chrome Inspect tool.
 One of the biggest issues I had while developing this game was implementing timeout inside for-loop inside my 'repeat' function. The length of myArray was increasing and I didn't know how to increase a timeout accordingly. After hours of research and experiments with setTimeout and setInterval functions I've found a solution on [Stack Overflow](https://stackoverflow.com/questions/7749090/how-to-use-setinterval-function-within-for-loop).
 
 <br/>To record players score I've used myArray.length in a 'score' function, but the problem was detected when I noticed that I could increase score just by clicking the Start button as it adds number with every click. To avoid it I've made a decision to disable 'Start' button for the time of playing. It enables again after the game is over. Also, I've disabled buttons with numbers to make sure your game is not over before you start it.

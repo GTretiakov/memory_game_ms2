@@ -9,7 +9,7 @@ An inspiration for this project comes from a game I found on memozor.com, a free
 I waned my game to be custom, so I decreased the quantity of numbers from 30 to 9 and added a Start button that starts the game.
 The design of this game is very simple and user intuitive, which makes it easy to start playing right away.
 ![wireframe](assets/images/wireframe.jpg)
-The result of my work is very close to the original wireframe:
+<br/>The result of my work is very close to the original wireframe:
 ![Memory Game](assets/images/memoryGame.jpg)
 
 

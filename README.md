@@ -35,6 +35,13 @@ The design of this game is very simple and user intuitive, which makes it easy t
 -	Google Fonts
 -	Draw.io
 
+## Testing
+Most of the testing was made manually using Google Chrome Inspect tool. To make sure the site is responsive and working properly. I’ve done all possible actions on all types of available devices. All elements are working as they are expected.<br/>
+Special thanks to http://ami.responsivedesign.is/ where I checked responsiveness on different types of devices.
+![responsive](assets/images/responsive.jpg)
+
+CSS code was checked with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and no errors were found.<br/>
+HTML code was checked with [HTML Validator]( https://validator.w3.org/nu/) and the only warning I’ve got was “Section lacks heading” which we can ignore as it’s not a significant detail and doesn’t affect our website in any way.
 
 
 

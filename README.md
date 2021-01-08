@@ -7,7 +7,7 @@ It was created to help you improve your memory while having fun.
 An inspiration for this project comes from a game I found on memozor.com, a free memory games website, where you can find a big variety of memory games with different styles.
 <br/>Link to the game: https://www.memozor.com/other-memory-games/numbers-memory-games/light-up-numbers
 I waned my game to be custom, so I decreased the quantity of numbers from 30 to 9 and added a Start button that starts the game.
-The design of this game is very simple and user intuitive, which makes it easy to start playing right away.<br/>
+The design of this game is very simple and user intuitive, which makes it easy to start playing right away.
 ![wireframe](assets/images/wireframe.jpg)
 <br/>The result of my work is very close to the original wireframe:<br/>
 ![Memory Game](assets/images/memoryGame.jpg)
@@ -41,7 +41,6 @@ Special thanks to http://ami.responsivedesign.is/ where I checked responsiveness
 ![responsive](assets/images/responsive.jpg)
 
 CSS code was checked with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and no errors were found.<br/>
-HTML code was checked with [HTML Validator](https://validator.w3.org/) and the only warning I’ve got was “Section lacks heading” which we can ignore as it’s not a significant detail and doesn’t affect our website in any way.
-
-
+HTML code was checked with [HTML Validator](https://validator.w3.org/) and no errors were found.<br/>
+JavaScript code was checked with [Syntax Validator](https://esprima.org/demo/validate.html) and it says "Code is syntactically valid." However I've also checked my JavaScript code with [BeautifyTools validator](http://beautifytools.com/javascript-validator.php) it showed me a large number of unsignificant mistakes such as missing or unnesessary simicolon. I may have to come back to my JavaScript code in the future and make it more beautiful and easy to read.
 

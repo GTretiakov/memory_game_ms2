@@ -41,7 +41,7 @@ Special thanks to http://ami.responsivedesign.is/ where I checked responsiveness
 ![responsive](assets/images/responsive.jpg)
 
 CSS code was checked with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator) and no errors were found.<br/>
-HTML code was checked with [HTML Validator]( https://validator.w3.org/nu/) and the only warning I’ve got was “Section lacks heading” which we can ignore as it’s not a significant detail and doesn’t affect our website in any way.
+HTML code was checked with [HTML Validator](https://validator.w3.org/) and the only warning I’ve got was “Section lacks heading” which we can ignore as it’s not a significant detail and doesn’t affect our website in any way.
 
 
 

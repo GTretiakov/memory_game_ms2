@@ -44,3 +44,8 @@ CSS code was checked with [W3C CSS Validator](https://jigsaw.w3.org/css-validato
 HTML code was checked with [HTML Validator](https://validator.w3.org/) and no errors were found.<br/>
 JavaScript code was checked with [Syntax Validator](https://esprima.org/demo/validate.html) and it says "Code is syntactically valid." However I've also checked my JavaScript code with [BeautifyTools validator](http://beautifytools.com/javascript-validator.php) it showed me a large number of unsignificant mistakes such as missing or unnesessary simicolon. I may have to come back to my JavaScript code in the future and make it more beautiful and easy to read.
 
+## Credits
+The idea for the game was taken from https://www.memozor.com/ - a website with huge selection of free memory games.
+The sound for clicking buttons was downloaded from https://www.myinstants.com/
+Special thanks to my teacher Usmaan Mujtaba (Canadian Business College) who consulted me during the process of creation this project.
+

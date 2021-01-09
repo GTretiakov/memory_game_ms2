@@ -24,7 +24,7 @@ As a player I want:
 -	Very simple design makes it easy to start playing and doesn't require additional instructions.
 -	You can choose your preferred speed level from 3 options available: Slow, Medium, Fast.
 -	All buttons (except for 'Start' button) have a sound effect.
-- The JavaScript code gives you a random series of numbers, which never repeats same number two times in a row.
+- The JavaScript code gives you a random series of numbers, and it never repeats same number two times in a row.
 - For those who love cheating I left a console.log function that logs an array with ordered numbers you need to repeat.
 
 ## Features Left to Implement

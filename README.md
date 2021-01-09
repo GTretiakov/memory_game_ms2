@@ -42,7 +42,9 @@ As a player I want:
 -	Draw.io
 
 ## Testing
-Most of the testing was done manually during development process using Google Chrome Inspect tool.
+Most of the testing was done manually during development process using Google Chrome Inspect tool.<br/>
+
+The basis for this game are two empty arrays. My JS code randomly pushes numbers to "myArray" and a player has to repeat these numbers clicking on them and pushing into "myArray2". To compare arrays, I used a snippet of code found on https://masteringjs.io/tutorials/fundamentals/compare-arrays. It compares not only arrays but every value they store.<br>
 One of the biggest issues I had while developing this game was implementing timeout inside for-loop inside my 'repeat' function. The length of myArray was increasing and I didn't know how to increase a timeout accordingly. After hours of research and experiments with setTimeout and setInterval functions I've found a solution on [Stack Overflow](https://stackoverflow.com/questions/7749090/how-to-use-setinterval-function-within-for-loop).
 
 <br/>To record player's score I've used myArray.length in a 'score' function, but the problem was detected when I noticed that I could increase score just by clicking the Start button as it adds new number to myArray with every click. To avoid it I've made a decision to disable 'Start' button for the time of playing. It enables again after the game is over. Also, I've disabled buttons with numbers to make sure a player can't finish the game before even starting it.

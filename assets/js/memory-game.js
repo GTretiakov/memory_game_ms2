@@ -400,3 +400,9 @@ $("#nine").click(function(){
        gameOver()
     }
 });
+$("#instBtn").click(function(){
+    soundClick()
+    $(".instructions>p").toggle( "fast" );
+    $("#instBtn").toggleClass("highlight")
+    $("#instBtn").toggleClass("normal")
+})

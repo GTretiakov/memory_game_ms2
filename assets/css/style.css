@@ -73,8 +73,8 @@
 
 /*----Speed----*/
 .speed {
-     width: 300px;
-    height: 50px;
+    margin-top: 10px;
+    width: 300px;
     margin: 0 auto;
     text-align: center;
     font-family: 'Yeon Sung', sans-serif;
@@ -88,12 +88,13 @@
     height: 50px;
     width: 100px;
     margin: 0;
+    margin-top:;
     border: 0;
     font-size: 30px;
     font-family: 'Yeon Sung', sans-serif;
     border-radius: 25px;
-     background-color: #3eb9bb;
-     padding: 0;
+    background-color: #3eb9bb;
+    padding: 0;
 }
 
 .speedBtnOn {
@@ -102,8 +103,32 @@
 .speedBtnOff {
     color: #fff;
 }
-
-
+/*----Instructions----*/
+.instructions {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 10px auto;
+    text-align: center; 
+}
+.instructions > p{
+    display: none;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Yeon Sung', sans-serif;
+    text-align: justify;
+    font-size: 20px;
+}
+#instBtn {
+    position: relative;
+    height: 50px;
+    width: 150px;
+    font-family: 'Yeon Sung', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 15px;
+}
 
 
 
